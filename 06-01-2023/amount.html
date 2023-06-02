@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let evironment =prompt("Enter environment (dev, Test, Prod, Stage)");
+        let amount = 100;
+
+        switch (evironment){
+            case "dev" : sendamount=amount+amount*10/100;
+                break;
+            case "Stage" : sendamount=amount+amount*30/100;  
+                break; 
+            case "Test" : sendamount=amount+amount*20/100;
+                break;
+            case "Prod" : sendamount=amount+amount*5/100;
+        }
+
+        console.log(sendamount);
+    </script>
+</body>
+</html>
