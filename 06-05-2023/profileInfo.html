@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile</title>
+    <script>
+        function displayProfile() {
+            var firstName = document.getElementById("Fname").value;
+            var lastName = document.getElementById("Lname").value;
+            var dob = document.getElementById("dob").value;
+            var email = document.getElementById("email").value;
+            var phoneNumber = document.getElementById("PN").value;
+
+            var profileInfo = "First Name: " + firstName + "<br>" +
+                              "Last Name: " + lastName + "<br>" +
+                              "Date of Birth: " + dob + "<br>" +
+                              "Email: " + email + "<br>" +
+                              "Phone Number: " + phoneNumber;
+
+            document.getElementById("profileOutput").innerHTML = profileInfo;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="Fname" placeholder="First Name"><br>
+        <input type="text" id="Lname" placeholder="Last Name"><br>
+        <input type="email" id="email" placeholder="Email"><br>
+        <input type="date" id="dob" placeholder="Date of Birth"><br>
+        <input type="number" id="PN" placeholder="Phone Number"><br>
+        <button type="button" onclick="displayProfile()">Submit</button>
+    </form>
+    <div id="profileOutput"></div>
+</body>
+</html>
