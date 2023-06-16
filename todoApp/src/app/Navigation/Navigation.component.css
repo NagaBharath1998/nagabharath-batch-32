@@ -1,0 +1,19 @@
+#myDiv {
+    background-color: lightblue;    
+    text-align: center;
+    
+  }
+  th {
+    padding: 25px; 
+    font-size: 30px;
+    color: white;
+  }
+  #verticalDiv {
+background-color:red;
+      display: flex;
+      height: 500px;
+      width:200px;
+      font-size:30px;
+      color: black;
+    }
+    
